@@ -38,24 +38,36 @@ This is the essential groundwork. Do not skip this phase, as everything that fol
 
 ---
 
-### **Phase 4: High-Value Specialization (NLP)**
+### **Phase 4: Advanced NLP: RAG & Generative AI **
 
 * **LEARNING:**
-    1.  Complete the **NLP Specialization** by DeepLearning.AI.
-    2.  Read **"Hands-On Large Language Models"** and **"Natural Language Processing with Transformers."**
-* **MILESTONE PROJECT:**
-    > **Project 4: Fine-Tune a State-of-the-Art Transformer**
-    >
-    > * **Objective:** Solve a real-world problem by fine-tuning a pre-trained model (e.g., BERT, T5) for a specific task like sentiment analysis or text classification. This is a core, in-demand industry skill.
+    1.  **Core Concepts:** Master the RAG pipeline: **Document Loading/Chunking**, **Embedding Models**, **Vector Databases** (e.g., Chroma, Pinecone), and **LLM Orchestration Frameworks** (e.g., LangChain, LlamaIndex).
+    2.  **Courses:** Complete short courses like deeplearning.ai's **"LangChain for LLM Application Development"** and **"Building Systems with the ChatGPT API."**
+    3.  **Reading:** Continue with **"Hands-On Large Language Models,"** focusing on the chapters covering vector search and application building.
 
-> **✅ After this phase, you have the specialized, high-value skills required to begin freelancing effectively.**
+* **MILESTONE PROJECT:**
+    > **Project 4: Build a RAG-Based Q&A System over Custom Documents**
+    >
+    > * **Objective:** Create a chatbot that can accurately answer questions based on a specific knowledge base (e.g., a PDF of a textbook, a company's internal documentation, or a set of articles).
+    > * **Core Steps:**
+    >     1.  Ingest and process the source documents.
+    >     2.  Use an embedding model (like `sentence-transformers`) to convert document chunks into vectors.
+    >     3.  Store these vectors in a local vector database like ChromaDB.
+    >     4.  Build an application that takes a user query, finds the most relevant document chunks from the database, and feeds them—along with the original query—to an LLM (via an API like OpenAI's) to generate a final, context-aware answer.
+
+> **✅ After this phase, your freelance profile is now exceptionally strong. You can market yourself specifically as a "Generative AI Developer" or "RAG Specialist."**
 
 ---
 
-### **Phase 5: Full End-to-End Deployment**
+### **Phase 5: Full End-to-End GenAI Service Deployment**
 
 * **LEARNING:** As you build, read **"Building Generative AI Services with FastAPI."**
+
 * **CAPSTONE PROJECT:**
-    > **Project 5: Deploy a Scalable Cloud Service**
+    > **Project 5: Deploy a Scalable RAG Chatbot Service**
     >
-    > * **Objective:** Take the fine-tuned NLP model from Phase 4 and deploy it as a robust, scalable service on a cloud platform (AWS, GCP, etc.). Implement a CI/CD pipeline for automated updates. This demonstrates your ability to manage the entire ML lifecycle.
+    > * **Objective:** Take the RAG system from Phase 4 and productize it.
+    > * **Core Steps:**
+    >     1.  Build a robust FastAPI backend that orchestrates the entire RAG pipeline: receiving a query, interacting with the vector database, and calling the external LLM API.
+    >     2.  Containerize this entire service, including the vector database, using Docker.
+    >     3.  Deploy it on a cloud platform (e.g., Google Cloud Run or AWS Elastic Beanstalk) and provide a live API endpoint.
