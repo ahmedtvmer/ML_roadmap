@@ -59,15 +59,34 @@ This is the essential groundwork. Do not skip this phase, as everything that fol
 
 ---
 
-### **Phase 5: Full End-to-End GenAI Service Deployment**
+### **Phase 5: Production Hardening & Validation**
 
-* **LEARNING:** As you build, read **"Building Generative AI Services with FastAPI."**
+* **LEARNING & APPLICATION:**
 
-* **CAPSTONE PROJECT:**
-    > **Project 5: Deploy a Scalable RAG Chatbot Service**
-    >
-    > * **Objective:** Take the RAG system from Phase 4 and productize it.
-    > * **Core Steps:**
-    >     1.  Build a robust FastAPI backend that orchestrates the entire RAG pipeline: receiving a query, interacting with the vector database, and calling the external LLM API.
-    >     2.  Containerize this entire service, including the vector database, using Docker.
-    >     3.  Deploy it on a cloud platform (e.g., Google Cloud Run or AWS Elastic Beanstalk) and provide a live API endpoint.
+    1.  **Data Quality & Validation:**
+        * **Learn:** Study data validation frameworks. The best tool to learn here is **Great Expectations**, or lighter-weight alternatives like **Pandera**.
+        * **Project Task:** Create a data validation suite for your project's input data. Your pipeline should now fail automatically if new data doesn't meet expected criteria (e.g., correct schema, value ranges, no unexpected nulls). This is your system's first line of defense.
+
+    2.  **Model Monitoring & Drift Detection:**
+        * **Learn:** Read about data drift vs. concept drift. Study open-source monitoring tools like **Evidently AI** or the combination of **Prometheus & Grafana** for building dashboards.
+        * **Project Task:** Instrument your trained model. Set up a dashboard (using Evidently AI or a similar tool) that tracks key metrics: input data distributions, prediction distributions, and a target performance metric. Simulate data drift (e.g., by altering the brightness in images for CV, or changing the vocabulary for NLP) and show that your monitoring system detects it.
+
+    3.  **A/B Testing & Controlled Rollouts:**
+        * **Learn:** Read engineering blogs from companies like Netflix, Uber, and Booking.com on how they conduct A/B tests for algorithmic products. Understand concepts like shadow deployment and canary releases.
+        * **Project Task:** Design an A/B testing framework for your application. You don't need to build a massive system, but you must architect it. In your project's documentation, create a clear diagram and explanation of how you would serve two different model versions (e.g., `model_v1` and `model_v2`) simultaneously and log their performance separately to determine a winner.
+
+    4.  **Compliance, Bias & Explainability:**
+        * **Learn:** Study ML fairness and bias auditing using libraries like **Fairlearn**. Learn model explainability techniques like **SHAP** and **LIME**. Familiarize yourself with the high-level principles of regulations like GDPR concerning automated decision-making.
+        * **Project Task:** For your specialized model, perform a bias audit. For example, if it's a text model, does it perform differently on text written in different dialects? If it's a face detection model, does its accuracy vary across different demographic groups? Generate a report. Additionally, use SHAP to create explainability plots for several individual predictions, showing which features (or pixels/tokens) contributed most to the outcome.
+      
+---
+
+### **Phase 6: Full End-to-End Deployment**
+
+This final phase is now about deploying the *hardened and validated system* from Phase 5, not just a model.
+
+* **CAPSTONE PROJECT (A or B):**
+    * **Objective:** Deploy your specialized application (GenAI or CV). The deployed service must include not only the prediction API endpoint but also:
+        1.  **A Data Validation Step:** The service should reject bad input data before it even hits the model.
+        2.  **Logging for Monitoring:** The service must output structured logs with the necessary information (prediction values, feature inputs) to feed the monitoring dashboard you designed in Phase 5.
+        3.  **An Explainability Endpoint (Optional but advanced):** Create a second endpoint that takes an instance and returns its SHAP values, demonstrating a production-ready explainability feature.
