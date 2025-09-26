@@ -16,7 +16,7 @@
 ### **Phase 2: Deep Learning for Text**
 
 * **LEARNING:**
-    * Complete the first two courses of the **Deep Learning Specialization** by DeepLearning.AI.
+    * Complete the first three courses of the **Deep Learning Specialization** by DeepLearning.AI.
     * Complete the **OpenCV Course** by FreeCodeCamp.
 * **MILESTONE PROJECT:**
     > **Project 2: Text Classifier From Scratch**
