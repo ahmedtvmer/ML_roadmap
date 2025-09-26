@@ -3,9 +3,9 @@
 ### **Phase 1: Foundational Prerequisites**
 
 * **LEARNING:**
-    1.  **Mathematics for Machine Learning and Data Science Specialization**
-    2.  **Python for Everybody Specialization**
-    3.  **Machine Learning Specialization**
+    1.  **Mathematics for Machine Learning and Data Science Specialization** by DeepLearning.AI.
+    2.  **Python for Everybody Specialization** by Michigan University.
+    3.  **Machine Learning Specialization** by Stanford University.
 * **MILESTONE PROJECT:**
     > **Project 1: Classic ML Model Implementation**
     >
@@ -16,7 +16,8 @@
 ### **Phase 2: Deep Learning for Text**
 
 * **LEARNING:**
-    * Complete the first two courses of the **Deep Learning Specialization**.
+    * Complete the first two courses of the **Deep Learning Specialization** by DeepLearning.AI.
+    * Complete the **OpenCV Course** by FreeCodeCamp.
 * **MILESTONE PROJECT:**
     > **Project 2: Text Classifier From Scratch**
     >
@@ -27,7 +28,7 @@
 ### **Phase 3: Core MLOps & Deployment**
 
 * **LEARNING:**
-    1.  Complete the **MLOps Specialization**.
+    1.  Complete the **MLOps Course** by DeepLearning.AI.
     2.  Read **"Designing Machine Learning Systems"** by Chip Huyen.
 * **MILESTONE PROJECT:**
     > **Project 3: Deploy the Text Classifier**
