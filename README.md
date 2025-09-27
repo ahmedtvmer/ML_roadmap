@@ -1,77 +1,80 @@
 # The Machine Learning Engineer's Roadmap
 
-### **Phase 1: Foundational Prerequisites**
+### Phase 1: Foundational Prerequisites (2–3 months)
 
-* **LEARNING:**
-    1.  **Mathematics for Machine Learning and Data Science Specialization** by DeepLearning.AI.
-    2.  **Python for Everybody Specialization** by Michigan University.
-    3.  **Machine Learning Specialization** by Stanford University.
-* **MILESTONE PROJECT:**
-    > **Project 1: Classic ML Model Implementation**
-    >
-    > * **Objective:** Implement Logistic Regression from scratch.
+* **Learning:**
+  1. Mathematics for Machine Learning and Data Science Specialization (DeepLearning.AI)  
+  2. Python for Everybody Specialization (University of Michigan)  
+  3. Machine Learning Specialization (Stanford University)  
 
----
-
-### **Phase 2: Deep Learning for Text**
-
-* **LEARNING:**
-    * Complete the first three courses of the **Deep Learning Specialization** by DeepLearning.AI.
-    * Complete the **OpenCV Course** by FreeCodeCamp.
-* **MILESTONE PROJECT:**
-    > **Project 2: Text Classifier From Scratch**
-    >
-    > * **Objective:** Implement a simple neural network in NumPy to perform sentiment analysis.
+* **Milestone Project:**  
+  **Classic ML Model Implementation** — Implement Logistic Regression from scratch.  
 
 ---
 
-### **Phase 3: Core MLOps & Deployment**
+### Phase 2: Deep Learning for Text (2–3 months)
 
-* **LEARNING:**
-    1.  Complete the **MLOps Course** by DeepLearning.AI.
-    2.  Read **"Designing Machine Learning Systems"** by Chip Huyen.
-* **MILESTONE PROJECT:**
-    > **Project 3: Deploy the Text Classifier**
-    >
-    > * **Objective:** Take the simple text classifier from Phase 2, wrap it in a FastAPI service, and containerize it with Docker.
+* **Learning:**
+  * First three courses of the Deep Learning Specialization (DeepLearning.AI)  
+  * OpenCV Course (FreeCodeCamp)  
 
-> **✅ After this phase, you are an entry-level freelancer (Simple classification tasks, basic model deployment, API wrappers)**
+* **Milestone Project:**  
+  **Text Classifier From Scratch** — Build a NumPy-based neural network for sentiment analysis.  
 
 ---
 
-### **Phase 4: The NLP Bridge to Modern AI**
+### Phase 3: Core MLOps & Deployment (1.5–2 months)
 
-* **LEARNING:**
-    1.  **The Transformer Architecture:** Read **"The Illustrated Transformer"** by Jay Alammar.
-    2.  **Embedding Concepts:** Learn to use a pre-trained sentence-transformer model to turn text into vectors.
-* **MILESTONE PROJECT:**
-    > **Project 4: Simple Embedding-Based Similarity Search**
-    >
-    > * **Objective:** Build a system that takes a sentence and finds the top 5 most semantically similar sentences from a document.
+* **Learning:**
+  1. MLOps Specialization (DeepLearning.AI)  
+  2. "Designing Machine Learning Systems" by Chip Huyen  
 
----
+* **Milestone Project:**  
+  **Deploy the Text Classifier** — Serve with FastAPI, containerize with Docker.  
 
-### **Phase 5: Advanced RAG & Generative AI**
-
-* **LEARNING:**
-    1.  Master **Vector Databases**, **LLM Orchestration Frameworks** (LangChain, LlamaIndex).
-    2.  Complete deeplearning.ai's **"LangChain for LLM Application Development."**
-* **MILESTONE PROJECT:**
-    > **Project 5: Full RAG Q&A System**
-    >
-    > * **Objective:** Build a full-fledged chatbot that answers questions over a custom knowledge base.
-
-> **✅ After this phase, you are a decent freelancer (Full RAG systems, custom chatbots, document Q&A applications)**
+✅ After this phase: entry-level freelancer (basic classification, simple deployment & APIs).  
 
 ---
 
-### **Phase 6: Production Hardening & Deployment (Capstone)**
+### Phase 4: The NLP Bridge to Modern AI (1.5–2 months)
 
-* **OBJECTIVE:**
-    > Take the RAG system from Phase 5 and deploy it as a professional-grade service. This is not just about making it live; it's about making it trustworthy.
-* **PROJECT REQUIREMENTS & LEARNING:**
-    > 1.  **Deploy the Service:** Containerize the full application and deploy it to a cloud platform.
-    > 2.  **Implement Data Validation:** Use **Great Expectations** or **Pandera** to build a validation layer that rejects malformed API requests *before* they are processed.
-    > 3.  **Integrate Monitoring & Logging:** Use **Evidently AI** or **Prometheus/Grafana** to create a dashboard. Your deployed service must output structured logs to track data drift, prediction quality, and system health.
-    > 4.  **Architect for A/B Testing:** Design and document how you would deploy a challenger model alongside your current one for controlled, online evaluation.
-    > 5.  **Ensure Compliance & Explainability:** Perform a bias audit on your system's outputs. Optionally, add an API endpoint that provides **SHAP**-based explanations for a given response.
+* **Learning:**
+  1. "The Illustrated Transformer" (Jay Alammar)  
+  2. Sentence-transformers for embeddings  
+
+* **Milestone Project:**  
+  **Embedding-Based Similarity Search** — Find top-5 semantically similar sentences in a document.  
+
+---
+
+### Phase 5: Advanced RAG & Generative AI (2–3 months)
+
+* **Learning:**
+  1. Vector databases, LangChain, LlamaIndex  
+  2. "LangChain for LLM Application Development" (DeepLearning.AI)  
+
+* **Milestone Project:**  
+  **RAG Q&A System** — Build a custom knowledge chatbot with full RAG pipeline.  
+
+✅ After this phase: decent freelancer (RAG, custom chatbots, doc Q&A apps).  
+
+---
+
+### Phase 6: Production Hardening & Deployment (Capstone) (2–3 months)
+
+* **Objective:**  
+  Deploy the RAG system as a production-grade, monitored, and explainable service.  
+
+* **Requirements:**  
+  1. Containerize and deploy on cloud (AWS/GCP/Azure).  
+  2. Add data validation (Great Expectations / Pandera).  
+  3. Monitoring & logging (Evidently AI, Prometheus/Grafana).  
+  4. A/B testing architecture.  
+  5. Bias audit + SHAP-based explanations.  
+
+---
+
+### Total Timeline
+
+- **Minimum pace (focused):** ~12–15 months  
+- **Part-time pace (while working):** ~18–24 months  
